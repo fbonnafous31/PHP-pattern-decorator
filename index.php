@@ -1,25 +1,23 @@
 <?php
 
-    use App\Caramel;
-    use App\Sumatra;
-    use App\Chocolat;
-    use App\Colombia;
-    use App\Expresso;
-    use App\Chantilly;
-    require_once ('autoload.php');
+    use Ingredients\Chocolat;
+    use Ingredients\Chantilly;
+    use Ingredients\Caramel;
 
-    $expresso = new Expresso(); 
+    require_once ('libraries/autoload.php');
+
+    $expresso = new \Boissons\Expresso(); 
     echo $expresso->getDescription(). " €" . $expresso->cout();
     echo '<br>';
 
-    $sumatra = new Sumatra(); 
+    $sumatra = new \Boissons\Sumatra(); 
     $sumatra = new Chocolat($sumatra);
     $sumatra = new Chocolat($sumatra);
     $sumatra = new Chantilly($sumatra);
     echo $sumatra->getDescription(). " €" . $sumatra->cout();
     echo '<br>';
 
-    $colombia = new Colombia(); 
+    $colombia = new \Boissons\Colombia(); 
     $colombia = new Caramel($colombia);
     $colombia = new Chocolat($colombia);
     $colombia = new Chantilly($colombia);

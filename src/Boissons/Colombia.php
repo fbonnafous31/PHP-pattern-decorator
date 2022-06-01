@@ -1,8 +1,8 @@
 <?php
 
-    namespace App;
+    namespace Boissons;
 
-    class Colombia implements Boisson {
+    class Colombia implements \App\Boisson {
 
         public function __construct() {
             $this->description = "Colombia";

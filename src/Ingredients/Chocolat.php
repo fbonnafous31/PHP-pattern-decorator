@@ -1,11 +1,11 @@
 <?php
 
-    namespace App;
+    namespace Ingredients;
 
-    class Chocolat extends DecorateurIngredient {
-        protected Boisson $boisson;
+    class Chocolat extends \App\DecorateurIngredient {
+        protected \App\Boisson $boisson;
 
-        public function __construct(Boisson $boisson) {
+        public function __construct(\App\Boisson $boisson) {
             $this->boisson = $boisson;
         }
 

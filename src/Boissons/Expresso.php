@@ -1,8 +1,8 @@
 <?php
 
-    namespace App;
+    namespace Boissons;
 
-    class Expresso implements Boisson {
+    class Expresso implements \App\Boisson {
 
         public function __construct() {
             $this->description = "Expresso";
